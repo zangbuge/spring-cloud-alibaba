@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @Author: Li Huiming
  * @Date: 2021/2/6
  */
-@FeignClient("nacos-feign")
+@FeignClient("nacos-service")
 public interface ProviderClient {
 
     @RequestMapping("/test")

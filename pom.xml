@@ -21,6 +21,7 @@
     <!-- 添加子模块 -->
     <modules>
         <module>feign</module>
+        <module>nacos-service</module>
     </modules>
 
     <dependencies>
