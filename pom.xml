@@ -22,6 +22,7 @@
     <modules>
         <module>feign</module>
         <module>nacos-service</module>
+        <module>gateway</module>
     </modules>
 
     <dependencies>
