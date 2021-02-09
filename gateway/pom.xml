@@ -17,16 +17,6 @@
 	</parent>
 	<dependencies>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
 			<!-- springcloudgateway的内部是通过netty+webflux实现,webflux实现和springmvc配置依赖冲突 -->
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-gateway</artifactId>
@@ -35,10 +25,6 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-web</artifactId>
 				</exclusion>
-				<!--<exclusion>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-starter-webflux</artifactId>
-				</exclusion>-->
 			</exclusions>
 		</dependency>
 	</dependencies>
