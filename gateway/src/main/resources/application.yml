@@ -1,0 +1,13 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: nacos-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: host_route # 路由的id,没有规定规则但要求唯一
+          uri: http://www.fxitalk.com/api/test/lhm #匹配后提供服务的路由地址
+          predicates:
+            - Path=/api/** #断言，路径相匹配的进行路由
