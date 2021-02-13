@@ -3,6 +3,7 @@ package com.zangbuge.nacosconfig;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,6 +30,13 @@ public class TestController {
     public String getProp() {
         log.info("获取配置: {}", name);
         return name;
+    }
+
+    @RequestMapping("/getConfig/{key}")
+    public String getConfig(@PathVariable("key") String key) {
+        String config = ConfigUtil.getConfig(key);
+        log.info("获取配置: {}", config);
+        return config;
     }
 
 }
