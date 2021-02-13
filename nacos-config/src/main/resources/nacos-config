@@ -1,0 +1,5 @@
+server.port=8764
+nacos.name=lhm123456
+#该文件放在nacos中配置
+#DataID: nacos-config
+#配置格式: Properties
