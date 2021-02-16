@@ -3,3 +3,15 @@ server:
 spring:
   application:
     name: nacos-feign
+
+  cloud:
+    sentinel:
+      eager: true
+      transport:
+        dashboard: localhost:8080
+        port: 8719
+feign:
+  sentinel:
+    enabled: true
+
+

@@ -24,6 +24,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<!-- 官网下载Sentinel https://github.com/alibaba/Sentinel/releases
+				启动默认端口8080, java -jar sentinel-dashboard-1.8.1.jar
+				登录账号密码均为sentinel
+			-->
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>
