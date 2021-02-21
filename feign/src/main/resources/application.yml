@@ -10,6 +10,17 @@ spring:
       transport:
         dashboard: localhost:8080
         port: 8719
+      datasource:
+        dsnacos:
+          nacos:
+            username: nacos
+            password: nacos
+            server-addr: 115.159.66.110:8848
+            namespace: test
+            dataId: ${spring.application.name}-flow-rules
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
 feign:
   sentinel:
     enabled: true
