@@ -19,9 +19,9 @@ public class FeignController {
     private ProviderClient providerClient;
 
     @RequestMapping("/testFeign")
-    public String testFeign() {
+    public Object testFeign() {
         log.info("testFeign");
-        String test = providerClient.test();
+        Object test = providerClient.test();
         return test;
     }
 

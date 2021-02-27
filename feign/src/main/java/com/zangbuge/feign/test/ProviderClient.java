@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ProviderClient {
 
     @RequestMapping("/test")
-    String test();
+    Object test();
 
 }

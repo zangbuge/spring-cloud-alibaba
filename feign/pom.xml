@@ -31,6 +31,13 @@
 			-->
 			<groupId>com.alibaba.cloud</groupId>
 			<artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
+			<exclusions>
+				<!--去除jackson-dataformat-xml，否则会返回xml文件，而不是JSON-->
+				<exclusion>
+					<groupId>com.fasterxml.jackson.dataformat</groupId>
+					<artifactId>jackson-dataformat-xml</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<!-- 通过nacos持久化流控规则 -->
 		<dependency>
