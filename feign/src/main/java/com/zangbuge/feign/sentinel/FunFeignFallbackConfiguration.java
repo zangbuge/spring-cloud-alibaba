@@ -9,6 +9,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 /**
+ * 重新覆盖注入熔断配置
+ *
  * @Author: Li Huiming
  * @Date: 2021/2/27
  */

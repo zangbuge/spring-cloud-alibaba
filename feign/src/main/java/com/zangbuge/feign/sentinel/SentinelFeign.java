@@ -58,7 +58,7 @@ public final class SentinelFeign {
 
                     String beanName = (String) SentinelFeign.Builder.this.getFieldValue(feignClientFactoryBean, "contextId");
 
-                    //获取指定的构造方法
+                    // 获取指定的构造方法
                     Constructor<SentinelInvocationHandler> constructor = SentinelInvocationHandler.class.
                             getDeclaredConstructor(Target.class, Map.class, FallbackFactory.class);
                     constructor.setAccessible(true);
