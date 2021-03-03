@@ -3,6 +3,7 @@
 spring:
   cloud:
     nacos:
+      register-enabled: true
       username: nacos
       password: nacos
       server-addr: 115.159.66.110:8848

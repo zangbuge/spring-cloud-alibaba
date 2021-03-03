@@ -11,3 +11,10 @@ spring:
           uri: http://www.fxitalk.com/api/test/lhm #匹配后提供服务的路由地址
           predicates:
             - Path=/api/** #断言，路径相匹配的进行路由
+
+        - id: route_test
+          uri: lb://nacos-service
+          predicates:
+            - Path=/api_test/**
+          filters: #过滤器
+            - RewritePath=/api_test/(?<segment>.*),/$\{segment} # 将跳转路径中包含的api替换成空
