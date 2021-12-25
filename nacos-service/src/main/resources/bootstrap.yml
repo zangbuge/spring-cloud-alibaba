@@ -5,7 +5,7 @@ spring:
     nacos:
       username: nacos
       password: nacos
-      server-addr: 115.159.66.110:8848
+      server-addr: www.fxitalk.com:8848
 
 # nacos配置禁用打印心跳日志
 logging:
